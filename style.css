@@ -10,10 +10,8 @@
 .main-container {
     height: 100vh;
     width: 1440px;
-    /* width: 100%; */
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
-    background-position: 75px 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +44,7 @@
 .card__text {
     width: 50%;
     flex-shrink: 0;
-    padding: 4em;
+    padding: 1em 4em;
     padding-left: 0;
 }
 
@@ -68,10 +66,33 @@
 }
 
 .card__question {
-    
+    color: hsl(237, 12%, 33%);
+    cursor: pointer;
+}
+.card__arrow {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card__question:hover {
+    color: rgb(223, 154, 27);
 }
 
 .card__answer {
-    display: none;
     padding-top: 1em;
+    color: hsl(240, 6%, 50%);
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.active {
+    transition: 0.5s linear;
+    max-height: 150px;
+}
+
+.rotate {
+    transform: rotate(0.5turn);
+    transition: 0.5s;
 }
