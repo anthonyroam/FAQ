@@ -46,7 +46,7 @@ body {
     position: relative;
     height: 40em;
     width: 50%;
-    background-image: url(images/bg-pattern-desktop.svg), url(images/illustration-woman-online-desktop.svg);
+    background-image: url(../images/bg-pattern-desktop.svg), url(../images/illustration-woman-online-desktop.svg);
     background-repeat: no-repeat;
     background-size: 40em, 28em;
     background-position: -16.5em , -4.5em center;
@@ -95,7 +95,7 @@ body {
 .card__question::before {
     position: absolute;
     right: 0;
-    content: url(images/icon-arrow-down.svg);
+    content: url(../images/icon-arrow-down.svg);
     transition: 0.5s;
 }
 
@@ -151,7 +151,7 @@ body {
         top: -32%;
         height: 23em;
         width: 100%;
-        background-image: url(images/illustration-woman-online-mobile.svg), url(images/bg-pattern-mobile.svg);
+        background-image: url(../images/illustration-woman-online-mobile.svg), url(../images/bg-pattern-mobile.svg);
         background-position: center, bottom;
         background-size: 22em;
     }
